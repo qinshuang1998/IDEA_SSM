@@ -20,12 +20,19 @@
     <!-- spring版本号 -->
     <spring.version>4.3.5.RELEASE</spring.version>
     <!-- mybatis版本号 -->
-    <mybatis.version>3.4.1</mybatis.version>
+    <mybatis.version>3.4.6</mybatis.version>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
 
   <dependencies>
+    <!-- JSON -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.56</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
     <dependency>
         <groupId>com.github.pagehelper</groupId>
@@ -62,14 +69,6 @@
       <version>1.2.2</version>
     </dependency>
 
-    <!-- JSON -->
-    <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>fastjson</artifactId>
-        <version>1.2.54</version>
-    </dependency>
-
-
     <!-- 数据库 -->
     <dependency>
       <groupId>mysql</groupId>
@@ -82,7 +81,7 @@
     <dependency>
       <groupId>com.mchange</groupId>
       <artifactId>c3p0</artifactId>
-      <version>0.9.5.2</version>
+      <version>0.9.5.3</version>
     </dependency>
 
     <!-- MyBatis -->
